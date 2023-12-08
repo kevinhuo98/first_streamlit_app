@@ -29,7 +29,8 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-
+add_my_fruit = streamlit.text_input("Add a new fruit to the list:")
+streamlit.success(f'{add_my_fruit} has been added to the fruit list')
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
